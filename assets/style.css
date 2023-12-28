@@ -1,50 +1,237 @@
-*{
+* {
     margin:0;
     Padding:0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.banner {
+.banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-Gradient(rgba(0,0,0,0.75)rgba(0,0,0,0.75)), url("./assets/background.jpg");
-    background-size: cover;
-    background-position:center;
+    table-layout: auto;
+    max-height: max-content;
+    background-image: linear-Gradient(rgba(237, 231, 231, 0.75),rgba(0,0,0,.75)), url(background1.png);
+    background-size:cover;
+    background-position: center;
 }
 
 a {
-    color: rgb(230, 229, 237);
+    color: rgb(5, 37, 60);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
   }
 
 
 p {
     text-align: left;
+
     
 }
 
 header {
     background-color: rgb(139, 195, 195);
     opacity: 0.5;
+    border-radius: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
    
 }
 
 
 h1 {
-    display:inline-block;
-    font-size: 50px;
+    display:block;
+    font-size: 40px;
     font-style: italic;
-}
+    color: rgb(50, 50, 132);
 
-
-.navbar {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:flex-end;
-    justify-content:space-between;
-    width: 30%;
-    float:right;
-    margin:0px;
+    
     
 }
 
 
+.navbar {
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display:inline-block;
+    padding:3px;
+    margin: 0 20px;
+    position:relative;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(50, 50, 132);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width:0;
+    background: #421d70;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    transition: 0.5s;
+
+
+}
+
+.navbar ul li:hover::after {
+    width:100%;
+}
+
+
+.header {
+    background-color: rgb(202, 201, 201);
+   
+}
+/* left section of the site */
+.content{
+    display:block;
+    position:absolute;
+    width: 60%;
+    top: 20%;
+    /* transform:translateY(-50%); */
+    left:5px;
+    color:rgb(39, 22, 49);
+    background-color: aliceblue;
+    opacity: 70%;
+    border-radius: 5%;
+    flex-direction: column;
+
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 300px;
+}
+
+.content p {
+    margin: 10px auto;
+    margin-left: 10%;
+    font-weight: 100;
+    line-height:25px
+
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: relative;
+    margin-top: 20%;
+
+}
+
+.bio p {
+    left: -5%;
+
+}
+.portfolio {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    max-width: 90%;
+    max-height: fit-content;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 48%;
+    right: 5%;
+    width: 30%;
+    height:50%;
+    padding: 10px;
+    background-color: aliceblue;
+    opacity: 60%;
+    border-radius: 5%;
+    
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    margin-top: 10px auto;
+    margin-right: 50px;
+    font-weight: 300px;
+}
+
+img{
+ margin-left: 35px;
+}  
+
+.flower{
+    position:absolute;
+    margin-top: -60%;
+    margin-right:-30px;
+    max-height: 200px;
+    max-width: 200px;
+    left: 60px;
+    border-radius: 50%;
+    
+}
+
+.prep {
+    display:block;
+    position:relative;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 15%;
+    top:30px;
+    left: -50%;
+    
+
+}
+
+.css {
+    position:relative;
+    right:-05%;
+    max-width: 150px;
+    max-height: 200px;
+    border-radius: 15%;
+}
+
+.javacup {
+    position:relative;
+    right:-05%;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 15%;
+}
+
+h2, h4, .prep, .css, .javacup, p {
+   display: flex;
+   position:relative;
+   justify-content:space-around;
+   margin-top: 10%;
+   align-content: flex-start;
+
+}
