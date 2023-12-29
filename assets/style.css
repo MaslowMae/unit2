@@ -7,24 +7,38 @@
 .banner{
     width: 100%;
     height: 100vh;
-    table-layout: auto;
-    max-height: max-content;
+    table-layout:auto;
+    max-height:fit-content;
     background-image: linear-Gradient(rgba(237, 231, 231, 0.75),rgba(0,0,0,.75)), url(background1.png);
     background-size:cover;
     background-position: center;
+    display:flex;
+    flex-direction: column;
 }
+.banner2 {
+    width: 100%;
+    height: 200vh;
+    max-height: max-content;
+    background-image: linear-Gradient(rgba(237, 231, 231, 0.75),rgba(0,0,0,.75)), url(background1.png);
+    background-size:200%;
+    background-position: center;
+}
+
 
 a {
     color: rgb(5, 37, 60);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
   }
+
 
 
 p {
     text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    
+body {
+    height: 1000px;
 }
 
 header {
@@ -94,7 +108,6 @@ h1 {
     width:100%;
 }
 
-
 .header {
     background-color: rgb(202, 201, 201);
    
@@ -105,10 +118,10 @@ h1 {
     position:absolute;
     width: 60%;
     top: 20%;
-    /* transform:translateY(-50%); */
     left:5px;
     color:rgb(39, 22, 49);
     background-color: aliceblue;
+    height: 250%;
     opacity: 70%;
     border-radius: 5%;
     flex-direction: column;
@@ -116,14 +129,17 @@ h1 {
 }
 
 .content h2{
+    display:inline-flex;
+    flex-wrap: wrap;
     font-size: 30px;
-    margin-top: 10px;
+    top: 30px;
     font-weight: 300px;
+    margin-right:0%;
 }
 
 .content p {
     margin: 10px auto;
-    margin-left: 10%;
+    margin-left: 5%;
     font-weight: 100;
     line-height:25px
 
@@ -136,29 +152,23 @@ h1 {
     flex-wrap: wrap;
     max-width: 100%;
     position: relative;
-    margin-top: 20%;
-
-}
-
-.bio p {
-    left: -5%;
-
-}
-.portfolio {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: left;
-    flex-wrap: wrap;
-    max-width: 90%;
-    max-height: fit-content;
     margin-top: 5%;
+    margin-right:10px;
 }
 
+.portfolio {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 98%;
+    max-height: 1000px;
+    font-size: small;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 5%;
+    justify-content: left;
 
-
-
-
+}
 
 
 
@@ -166,14 +176,15 @@ h1 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 48%;
-    right: 5%;
-    width: 30%;
+    top: 30%;
+    right: 2%;
+    width: 32%;
     height:50%;
     padding: 10px;
     background-color: aliceblue;
     opacity: 60%;
     border-radius: 5%;
+    height: 150%;
     
 }
 
@@ -189,50 +200,44 @@ img{
 }  
 
 .flower{
-    position:absolute;
-    margin-top: -60%;
-    margin-right:-30px;
+    position:relative;
+    display:block;
+    top: -25%;
+    margin-right:-50px;
     max-height: 200px;
     max-width: 200px;
     left: 60px;
     border-radius: 50%;
     
 }
-
-.prep {
-    position:relative;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 15%;
-    top: 20px;
+.portfolio {
+    display:flex;
+    height:90vh;
+    width: 100%;
+    flex-wrap: wrap;
     
-    
-
 }
 
-.css {
-    position:relative;
-    right:-05%;
-    max-width: 150px;
+
+.title {
+    display: block;
+    width:100%;
+}
+img {
+    display:inline-block;
+    max-width: 200px;
     max-height: 200px;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
-.javacup {
-    position:relative;
-    right:-05%;
-    max-width: 150px;
-    max-height: 150px;
+span {
+    display:flex;
+    justify-content: space-between;
+    flex:start;
+    padding:2%;
+    max-width: 98%;
+    max-height: 25%;
     border-radius: 15%;
-}
-
-h2, h4, .prep, .css, .javacup, p {
-   display: flex;
-   position:relative;
-   margin-top: 10%;
-   align-content: left;
-   width:95%;
-   margin-left:10px;
-
+    border: 10px solid rgb(153, 137, 171);
 
 }
