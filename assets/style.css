@@ -1,3 +1,4 @@
+
 * {
     margin:0;
     Padding:0;
@@ -399,10 +400,6 @@ input:focus, textarea:focus {
 }
 
 :-ms-input-placeholder {
-    color: purple;
-    opacity: 1;
-}
-::-ms-input-placeholder {
     color: purple;
     opacity: 1;
 }
