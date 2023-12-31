@@ -329,18 +329,6 @@ button {
 }
 
 
-.flowerslide {
-    /* animation: flowerspin 1s ease-in; */
-}
-    /* Code broken down to animate slide right: 
-    animation-name: flowerspin;
-    animation-duration: 1s;
-    animation-timing-function: ease-in ;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both; */
-
 @keyframes flowerspin {
 
 from {
