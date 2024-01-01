@@ -7,24 +7,25 @@
     <title>Brittany's Portfolio</title>
 </head>
 
-<header class="header">
+<!-- add links in header to link to sections on the same page -->
+<header class="header" class="col-1">
     
-            <nav class="navbar">
+            <nav class="navbar" id="top">
                 <h1 alt="Brittany Montanye">Brittany's Portfolio</h1>
                     <ul>
-                        <li><a id="bio" href="#" alt="About Brittany">Bio</a></li>
-                        <li><a id="Portfolio" href="#">Samples</a></li>
-                        <li><a id="Credentials" href="#">Credentials</a></li>
+                        <li><a id="bio" href="#bio" alt="About Brittany">Bio</a></li>
+                        <li><a id="Portfolio" href="#portfolio">Samples</a></li>
+                        <li><a id="Credentials" href="#credentials">Credentials</a></li>
                     </ul>
             </nav>
 </header>
 
 
 <body>
-   <div class="banner">
-        <main class="content">
-            <section class="bio" id="bio">
-                <h2><a href="bio"></a> .:.About:.:.</h2>
+   <div class="banner" id="col-2">
+        <main class="content" class="col-3" id="main">
+            <section class="bio">
+                <h2><a id="bio" href="bio"></a> .:.About:.:.</h2>
                         <br>
                         <br>
                         <br>
@@ -35,18 +36,18 @@
                         their own vulnerabilities and risk appetites.
                         <br>
                         <br>
-                        One of her greates acccomplishements was building a risk score model where she working with top level
-                        engineers to turn it into a ML model and AI. She has worked with SQL to work with big data and reporting
+                        One of her greates acccomplishements was designing a risk score model where she worked with top level
+                        engineers to turn it into a ML feature model and scoped for AI. She has worked with SQL to work with big data and reporting
                         and hopes to keep building her data and coding skills to be a true asset to the field of finTech and the
                         a leader in the growing use of AI.</p>
             </section>
            
-            <section class="portfolio" id="portfolio">
+            <section class="portfolio">
                 
-                <h2 class="titleportfolio">.:.Portfolio:.:.</h2><br>
+                <h2 id="portfolio" class="titleportfolio">.:.Portfolio:.:.</h2><br>
                 <br>
-<!-- portfolio holds images that should hyperlink to links below -->
-                <span>
+portfolio holds images that should hyperlink to links below
+                <span id="span">
                     <a href="https://maslowmae.github.io/ucf/"><img class="span img" src="./assets/prep.png" alt="prep notes"></a>
                     <br>
                     <br>
@@ -60,7 +61,7 @@
                     <br>
                     <br>
 
-                <span>
+                <span id="span">
                     <a href="https://maslowmae.github.io/ucf/"><img class="span img" src="./assets/hellocode.png" alt="HTML CSS work example"></a>
                     <br>
                     <br>
@@ -70,7 +71,7 @@
                 </span>
                 <br>
                 <br>
-                <span>
+                <span id="span">
                     <a href=""><img class="java" class="span img" src="./assets/javacup.png" alt="Javascript"></a>
                     <br>
                     <br>
@@ -81,7 +82,7 @@
 
 
             <section class="credentials" id="credentials">
-                <h2> .:.Credentials and Education:.:. </h2>
+                <h2 id="credentials"> .:.Credentials and Education:.:. </h2>
                 <br>
                 <img src="" alt="">
                 <ul>
@@ -89,19 +90,25 @@
                     <li>Certified Financial Compliance - CAMS</li>
                     <li>Certified Project Manager Professional</li>
                 </ul>
-
             </section>
+                <br>
+            <footer>
+                    <section class="footer" id="top">
+                        <a href="#top" alt="top of page">back to top</a>
+                    </section>
+            </footer>
+            
         </main>
 
-            <img id="flower" class="flowerspin" src="./assets/fractal_flower.jpg" alt="flower photo">
+            <img id="flower" class="flowerspin" class="col-4" src="./assets/fractal_flower.jpg" alt="flower photo">
 
-        <aside class="sidebar">
+        <aside class="sidebar" class="col-5" id="rightsidebar">
 
             <Section class="asidesection">
-                <h3 class="bounce"> Contact Brittany!</h3>
+                <h3 class="bounce" id="bio"> Contact Brittany!</h3>
                 <br>
 
-                <!-- <form action="contactform.php" method="post (if using a password)" or "get" if no passwords> -->
+             <form action="contactform.php" method="post (if using a password)" or "get" if no passwords> -->
                    <form>
                         <input type="text" name="fname" placeholder="first name">
                         <br>
@@ -155,18 +162,8 @@
                         <li class="linklist"><a href="https://www.youtube.com/@GreatStackDev"> GreatStack on Youtube</a></li>
                     </ul>
             </section>
-
-
         </aside>
+    </div>
 
 </body>
-<footer>
-
-
-
-
-
-
-</footer>
-
 </html>
