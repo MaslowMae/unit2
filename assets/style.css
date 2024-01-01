@@ -1,3 +1,4 @@
+
 * {
     margin:0;
     Padding:0;
@@ -407,6 +408,7 @@ input:focus, textarea:focus {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 
 /* Media Queries */
 
@@ -433,3 +435,9 @@ input:focus, textarea:focus {
 
     }
 }
+=======
+:-ms-input-placeholder {
+    color: purple;
+    opacity: 1;
+}
+>>>>>>> 2f393810dd4a2adedf14d1d6941a494d24179b87
