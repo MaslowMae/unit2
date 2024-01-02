@@ -3,7 +3,6 @@
     margin:0;
     Padding:0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--text-dark);
 }
 
 :root {
@@ -49,26 +48,25 @@ header {
     background-color: rgb(139, 195, 195);
     opacity: 0.5;
     border-radius: 15%;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     position: relative;
 }
 
-
 h1 {
-    display:block;
+    display:flex;
     font-size: 40px;
     font-style: italic;
-    /* color: rgb(50, 50, 132); */
+    color: rgb(50, 50, 132);
     color:var(--text-dark);
 }
 
 
 .navbar {
+    display:flex;
     width: 85%;
     margin:auto;
     padding: 35px 0;
-    display:flex;
     align-items: center;
     justify-content:space-between; 
 }
@@ -76,6 +74,8 @@ h1 {
 .navbar ul li {
     list-style: inline;
     display:inline-block;
+    position: relative;
+    right:40px;
     padding:3px;
     margin: 0 20px;
     position:relative;
@@ -408,7 +408,6 @@ input:focus, textarea:focus {
     opacity: 1;
 }
 
-<<<<<<< HEAD
 
 /* Media Queries */
 
@@ -435,9 +434,3 @@ input:focus, textarea:focus {
 
     }
 }
-=======
-:-ms-input-placeholder {
-    color: purple;
-    opacity: 1;
-}
->>>>>>> 2f393810dd4a2adedf14d1d6941a494d24179b87
