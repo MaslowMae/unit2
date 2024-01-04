@@ -18,6 +18,7 @@
 .banner {
     height: 300vh;
     max-height: fit-content;
+    width:100%;
     background-image: linear-Gradient(rgba(237, 231, 231, 0.75), rgba(0, 0, 0, .75)), url(background1.png);
 }
 
@@ -26,7 +27,6 @@ a {
     color: rgb(5, 37, 60);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 
 p {
@@ -56,7 +56,10 @@ h1 {
 
 .navbar {
     display: flex;
-    width: 85%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: left;
+    width: 90%;
     margin: auto;
     padding: 40px 0;
     justify-content: space-between;
@@ -65,8 +68,9 @@ h1 {
 }
 
 .navbar ul li {
-    display:inline;
+    display:flex;
     position:relative;
+    justify-content: flex-end;
     right: 0px;
     padding: 0px;
     margin: 0 0px;
@@ -104,9 +108,9 @@ h1 {
 
 /* left section of the site */
 .content {
-    display: block;
+    display: inline-block;
     width: 100%;
-    max-height: auto;
+    max-height: 90%;
     color: rgb(39, 22, 49);
     background-color: aliceblue;
     opacity: 70%;
@@ -134,15 +138,24 @@ h4 {
 
 
 .content p {
-    margin-left: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
     font-weight: 100;
     line-height: 25px;
+
 }
 
 .description {
     color: rgb(196, 180, 217);
-    text-align: left;
-    padding: 5px;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 100;
+    line-height: 25px;
 }
 
 .bio {
@@ -165,7 +178,7 @@ h4 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     max-height: 800px;
     font-size: small;
@@ -175,19 +188,24 @@ h4 {
     justify-content: left;
 
 }
-
-.portfolioitem {
-    display: flex;
+.portfolioitem1 {
+    display:flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: left;
-    padding: 3%;
-    max-width: 98%;
-    max-height: 15%;
-    margin-top: 30px;
-    margin-left: 30px;
-    Margin-right: -50px;
+    justify-content: center;
+    border-radius: 15%;
+    border: 10px solid rgb(196, 180, 217);
+    background-color: #451f54;
+    text-decoration: none;
+    color: rgb(196, 180, 217);
+}
+.portfolioitem {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 15%;
     border: 10px solid rgb(196, 180, 217);
     background-color: #451f54;
@@ -195,18 +213,49 @@ h4 {
     color: rgb(196, 180, 217);
 }
 
+.portfolioitem1 img {
+    float:left;
+    display: flex;
+    Position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: -5px;
+    width: 250px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 15%;
+    float:left;
+}
+
 .portfolioitem img {
     display: flex;
     Position: absolute;
-    justify-content: space-around;
-    margin-left: -125px;
-    margin-top: -20px;
-    width: 150px;
-    height: 130px;
+    justify-content: center;
+    width: 100px;
+    height: 90px;
     border-radius: 15%;
+    border: 2px solid aliceblue;
+   
 }
 
 .portfolioitem img:hover {
+    transform: translateY(-10px);
+    transform: translateX(30px);
+}
+.portfolioitem1 img {
+    display: flex;
+    Position: absolute;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    border: 2px solid aliceblue;
+
+}
+
+.portfolioitem1 img:hover {
     transform: translateY(-10px);
     transform: translateX(30px);
 }
@@ -216,18 +265,20 @@ h4 {
 .sidebar {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    gap: 16px;
-
+    align-content: center;
+    justify-content: space-around;
+    
 }
 
 .sidebarsections {
     padding: 10px;
     background-color: aliceblue;
-    opacity: 60%;
-    border-radius: 5%;
+    opacity: 70%;
     width: 100%;
+    border-radius: 10%;
+    color: var(--text-dark);
 
 }
 
@@ -258,21 +309,17 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    max-height: 1000px;
     font-size: small;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 30%;
-    justify-content: left;
-    color: var(--text-dark);
+    color: var(--text-dark)
 }
 
 .asidesection {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
+    justify-content: space-around;
+    max-width: 80%;
+    color: var(--text-dark)
 }
 
 button {
@@ -410,11 +457,10 @@ textarea:focus {
         justify-content: space-between;
         align-items: center;
     }
-
-    /* content */
     .banner {
         display: flex;
-        gap: 16px;
+        width: 100%;
+        gap: 20px;
         padding: 16px;
 
     }
@@ -428,16 +474,61 @@ textarea:focus {
     }
 }
 
-@media screen and (min-width: 600px) {
+
+ @media screen and (max-width: 300px) { 
+    .banner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+
+    }
+    .navbar ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .content {
+        flex: 2;
+
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+    .navbar ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* content */
+    .banner {
+        display: flex;
+        gap: 16px;
+       
+
+    }
+}
+/* @media screen and (max-width: 575px) {
 
     .navbar {
         display: flex;
         position: relative;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
     }
-}
+    .content {
+        flex: 2;
+    }
 
-@media screen and (min-width: 700px) {
-
-}
+    .sidebar {
+        flex: 1;
+    }
+    .flower {
+        width: 0;
+        height: 0;
+    }
+} */
