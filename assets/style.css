@@ -13,12 +13,13 @@
     --text-light: rgb(196, 180, 217);
 }
 
-
-
 .banner {
-    height: 300vh;
+    display: flex;
+    height: 400vh;
     max-height: fit-content;
-    width:100%;
+    width:97%;
+    gap:20px;
+    padding: 16px;
     background-image: linear-Gradient(rgba(237, 231, 231, 0.75), rgba(0, 0, 0, .75)), url(background1.png);
 }
 
@@ -37,12 +38,14 @@ p {
 
 body {
     height:fit-content;
+    max-width: 100%;
 }
 
 .header {
     background-color: rgb(139, 195, 195);
     opacity: 0.5;
     border-radius: 15%;
+    width: 100%;
 }
 
 h1 {
@@ -70,20 +73,25 @@ h1 {
 .navbar ul li {
     display:flex;
     position:relative;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: end;
     right: 0px;
     padding: 0px;
     margin: 0 0px;
-
-}
-
-
-.navbar ul li a {
     text-decoration: none;
     color: rgb(50, 50, 132);
     text-transform: uppercase;
     font-weight: bold;
+
 }
+
+
+/* .navbar ul li a {
+    text-decoration: none;
+    color: rgb(50, 50, 132);
+    text-transform: uppercase;
+    font-weight: bold;
+} */
 
 .navbar ul li::after {
     content: '';
@@ -110,11 +118,12 @@ h1 {
 .content {
     display: inline-block;
     width: 100%;
-    max-height: 90%;
+    max-height: 100%;
+    margin-right: 20px;
     color: rgb(39, 22, 49);
     background-color: aliceblue;
     opacity: 70%;
-    border-radius: 5%;
+    border-radius:5%;
 }
 
 h2,
@@ -166,26 +175,23 @@ h4 {
     flex-wrap: wrap;
     max-width: 90%;
     position: relative;
+    margin-left: 30px;
 }
 
-.titleportfolio {
-    display: block;
-    width: 100%;
-}
 
 .portfolio {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    width: 80%;
-    margin-left: 10%;
-    max-height: 800px;
+    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
     font-size: small;
     text-align: center;
     border-radius: 20px;
     margin-top: 5%;
-    justify-content: left;
+    margin-left: 25px;
+
 
 }
 .portfolioitem1 {
@@ -219,7 +225,6 @@ h4 {
     Position: absolute;
     flex-wrap: wrap;
     flex-direction: column;
-    left: -5px;
     width: 250px;
     height: 200px;
     margin-top: 50px;
@@ -228,9 +233,11 @@ h4 {
 }
 
 .portfolioitem img {
+    float:left;
     display: flex;
     Position: absolute;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 100px;
     height: 90px;
     border-radius: 15%;
@@ -268,8 +275,7 @@ h4 {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    justify-content: space-around;
-    
+    margin-right: 5%;
 }
 
 .sidebarsections {
@@ -279,17 +285,20 @@ h4 {
     width: 100%;
     border-radius: 10%;
     color: var(--text-dark);
+    margin-top: 10%;
+    margin-left: 30px;
+    align-content: center;
+
+
 
 }
 
 .sidebar h3 {
     font-size: 24px;
-    margin-top: 15px auto;
-    margin-right: 50px;
     font-weight: 300px;
 }
 
-/* top right image functions with Animation and alone */
+/* top right image functions with Animation Keyframes*/
 #flower {
     display: flex;
     flex-wrap: wrap;
@@ -309,6 +318,7 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    margin-top: 50px;
     font-size: small;
     color: var(--text-dark)
 }
@@ -319,7 +329,8 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
     max-width: 80%;
-    color: var(--text-dark)
+    margin-left: 10%;
+    color: var(--text-dark);
 }
 
 button {
@@ -330,14 +341,8 @@ button {
     color: white;
     border-radius: 15px;
     padding: 2px;
-
     transition: transform 0.3s;
-    /* transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0; */
 }
-
 
 .btn:hover {
     transform: translateY(-10px);
@@ -357,6 +362,7 @@ button {
     bottom: 0;
     text-transform: uppercase;
     font-weight: bold;
+    right:10%;
 }
 
 
@@ -450,23 +456,17 @@ textarea:focus {
 /* Media Queries */
 
 /* For Mobile Phone: */
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
+
 
     .navbar ul li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .banner {
-        display: flex;
-        width: 100%;
-        gap: 20px;
-        padding: 16px;
-
+        float: inline-end;
+        justify-content: right;
     }
 
     .content {
         flex: 2;
+        justify-content: space-around;
     }
 
     .sidebar {
@@ -475,50 +475,48 @@ textarea:focus {
 }
 
 
- @media screen and (max-width: 300px) { 
-    .banner {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        padding: 16px;
+ @media screen and (max-width: 600px) { 
 
-    }
-    .navbar ul li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    .content {
-        flex: 2;
-
-    }
-
-    .sidebar {
-        flex: 1;
-    }
-    .navbar ul li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* content */
     .banner {
         display: flex;
         gap: 16px;
-       
+        padding: 16px;
+        height: 100%;
+    }
+    .navbar ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .content {
+        flex: 2;
 
     }
-}
-/* @media screen and (max-width: 575px) {
 
+    .sidebar {
+        flex: 1;
+    }
+    .portfolioitem img, .portfolioitem1 img {
+    display: inline;
+    position: relative;
+    }
+    .credentials {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap:16px;
+        padding: 16px;
+
+    }   
     .navbar {
         display: flex;
-        position: relative;
-        align-items: center;
         justify-content: space-between;
-        flex-direction: column;
+        align-items: center;
     }
     .content {
         flex: 2;
@@ -527,8 +525,29 @@ textarea:focus {
     .sidebar {
         flex: 1;
     }
-    .flower {
+    /* .flower {
         width: 0;
         height: 0;
+    } */
+}
+
+@media screen and (min-width: 601px) { 
+
+
+    .portfolioitem1 img {
+        position: relative;
+
     }
-} */
+
+    .portfolioitem img {
+        position: relative;
+    }
+
+    .content {
+        flex: 2;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+}
