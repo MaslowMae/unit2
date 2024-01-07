@@ -4,10 +4,7 @@ Unit Two Challenge Accepted!
 Here you will see a leverage of things we learned this week in HTML and Advanced CSS.
  
 ## Portfolio - responsive design CSS
-Choose a self-explaining name for your project.
-
-## Project Status
-In progress - Ongoing - deadline 5/10/2024
+Ongoing - deadline 5/10/2024
 
 ## organization
 This is site complete with header, responsive navigation items and minimal animation/transformations to enhance the overall look. 
